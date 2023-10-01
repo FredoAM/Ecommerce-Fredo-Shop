@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Lacquer');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Oswald:wght@700&family=Poppins&display=swap');
+
+:root {
+    --navbarHeight: 65px;
+    --sidebarWidth: 45vw;
+    --primary: #080808;
+    --secondary: #ffc600;
+    --bgImage: url(https://images.unsplash.com/photo-1563733758230-a5d441824696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+body {
+	margin: 0;
+}
+
+body,button,input {
+	font-family: Poppins;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+section{
+    max-width:1200px; 
+}
+
+header{
+	width: 100%;
+	display: flex;
+	background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.navbar {
+	background: #fff;
+	color: #000;
+	padding: 15px;
+	width: 1200px;
+	height: var(--navbarHeight);
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.navbar .logo {
+	cursor: pointer;
+	font-size: 20px;
+}
+.navbar .logo span{
+	color: #cc4d29;
+	cursor: pointer;
+}
+
+.navbar ul.links {
+	
+	margin-left: auto;
+	margin-right: 50px;
+	list-style: none;
+	
+	display: flex;
+	align-items: center;
+	
+	transition: 0.4s ease all, 0s ease background;
+
+}
+
+.navbar ul.links li {
+		text-transform: uppercase;
+		padding: 0 15px;
+		height: var(--navbarHeight);
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		transition: 0.4s ease all, 0s ease margin;
+}
+
+.navbar ul.links li a {
+			text-decoration: none;
+			color: #000;
+}
+		
+.navbar ul.links li:hover {
+			background: #cc4d29;
+			cursor: pointer;
+}           
+.navbar ul.links li:hover a{          
+            color: #fff;
+}
+		
+
+	
+
+		
+
+.navbar .menu {
+	width: 300px;
+	height: 300px;
+	display: none;
+	
+}
+
+
+.menu.active , .menu{
+	width: 300px;
+	height: 300px;
+	display: flex;
+    background-color: #000;
+}	
+
+.menu-links{
+	width: 100%;
+	color: #fff;
+	display: flex;
+}
+
+
+
+
+
+@media screen and (max-width: 750px){
+	
+	.toggle {
+		position: absolute;
+		top: var(--navbarHeight) / 2;
+		right: 20px;
+		z-index: 99;
+
+
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.toggle	> * {
+		width: 80%;
+		height: 2px;
+		background: #000;
+		margin: 3px 0;
+	}
+
+	
+	.navbar ul.links{
+		display: none;
+	}
+
+	
+}
