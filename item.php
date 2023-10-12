@@ -1,3 +1,9 @@
+<?php
+// Incluye el código PHP para obtener los datos del artículo
+include('get-item.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +41,7 @@
                 </ul>
             </div>
             <?php
-            // Incluye el código PHP para obtener los datos del artículo
-            include('get-item.php');
+            
             if ($item) {
             ?>
             <div class="item-container">
