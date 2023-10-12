@@ -16,7 +16,7 @@ include('get-item.php');
     <script src="https://kit.fontawesome.com/8aa54e52b5.js" crossorigin="anonymous"></script>
     <?php
         // Incluye el código PHP para obtener los datos del artículo
-        include('get-item.php');
+        
 
         if ($item) {
             echo '<title>' . htmlspecialchars($item[0]['title']) . '</title>';
