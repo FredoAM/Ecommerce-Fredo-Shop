@@ -1,7 +1,7 @@
 
 <?php
 // Connect to the database
-$conn = new mysqli("localhost", "root", "", "ecommerce_db") or die("not connected" . mysqli_connect_error());
+include("db.php");
 
 header("Access-Control-Allow-Methods: GET, POST");
 header("Access-Control-Allow-Headers: Content-Type");

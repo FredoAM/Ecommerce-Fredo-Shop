@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$conn = new mysqli("localhost", "root", "", "ecommerce_db") or die("not connected" . mysqli_connect_error());
+include("db.php");
 
 
 
