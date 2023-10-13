@@ -2,7 +2,9 @@
 // Connect to the database
 include("db.php");
 
-
+header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: Content-Type");
+header('Access-Control-Allow-Origin: *');
 
 
 if ($conn->connect_error) {
