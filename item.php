@@ -90,7 +90,7 @@ include('get-item.php');
     </main>
     <?php include('footer.php'); 
     
-    $conn->close();
+    
     ?>
 
     <script src="app.js"></script>
