@@ -1,4 +1,3 @@
-
 const minus = document.querySelector('.fa-minus');
 const add = document.querySelector('.fa-plus');
 const quantity = document.querySelector('.quantity');
@@ -10,9 +9,9 @@ const itemPic = document.querySelector('.item-pic img');
 const imageUrl = itemPic.getAttribute('src');
 const imageId = itemPic.getAttribute('alt');
 
-    let number = 1;
+let number = 1;
     
-    quantity.innerHTML = number;
+quantity.innerHTML = number;
 
 
 let nuevoPrecio = parseInt(price.innerHTML.slice(2));

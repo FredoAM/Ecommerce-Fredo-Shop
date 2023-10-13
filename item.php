@@ -85,10 +85,13 @@ include('get-item.php');
             } else {
                 echo "<p>No se encontraron datos del artículo.</p>";
             }
-            $conn->close();
+            
             ?>
     </main>
-    <?php include('footer.php'); ?>
+    <?php include('footer.php'); 
+    
+    $conn->close();
+    ?>
 
     <script src="app.js"></script>
     <script src="app-item.js"></script>
