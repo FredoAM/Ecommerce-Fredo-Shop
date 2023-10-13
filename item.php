@@ -93,7 +93,6 @@ include('get-item.php');
     
     ?>
 
-    <script src="app.js"></script>
     <script src="app-item.js"></script>
 </body>
 </html>

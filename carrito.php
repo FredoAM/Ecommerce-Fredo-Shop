@@ -44,7 +44,6 @@
     </main>
 
     <?php include('footer.php'); ?>
-    <script src="app.js"></script>
     <script src="app-carrito.js"></script>
 </body>
 </html>

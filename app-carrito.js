@@ -2,7 +2,7 @@ const cart = document.querySelector('#cart');
 const checkout = document.querySelector('.checkout');
 const clearCart = document.querySelector('.btn-clear');
 const container = document.querySelector('.container-carrito');
-
+const menu = document.querySelector('.menu');
 
 // Función para renderizar el carrito
 function renderCarrito(storedCarrito) {

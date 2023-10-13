@@ -8,6 +8,7 @@ const itemDescription = document.querySelector('.item-description');
 const itemPic = document.querySelector('.item-pic img');
 const imageUrl = itemPic.getAttribute('src');
 const imageId = itemPic.getAttribute('alt');
+const menu = document.querySelector('.menu'); 
 
 let number = 1;
     
